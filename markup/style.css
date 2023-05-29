@@ -225,18 +225,23 @@ main .triangle {
 /* posts */
 
 section.updates {
-    height: 114vh;
-    padding: 20px;
+    height: 93vh;
+    padding: 0px 20px;
     background-color: var(--primary-color);
     position: relative;
     z-index: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .update-triangle {
     position: absolute;
     z-index: 2;
-    height: calc(100);
-    width: 50%;
+    height: 100%;
+    width: calc(142%);
+    transform: rotateZ(-30deg) translate(-10%, 55%);
     background-color: white;
     top: 0;
     left: 0;
@@ -258,14 +263,43 @@ section.updates {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
     position: relative;
+    max-width: 1800px;
 }
 
 .update-post {
-    height: 400px;
+    height: 320px;
     
     box-shadow: 0px 0px 24px 3px rgba(0, 0, 0, 0.25);
     background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
+
+.view-all-posts {
+    height: 320px;
+    
+    box-shadow: 0px 0px 24px 3px rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color)
+}
+
+.view-all-posts h1 {
+    font-size: 8em;
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+    
+}
+
+.view-all-posts:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all .5s;
+}
+
 
 .post-header {
     height: 75px;
