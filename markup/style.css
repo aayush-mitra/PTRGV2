@@ -17,6 +17,7 @@ body {
     padding: 0;
     font-family: 'DM Sans', sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 header {
@@ -51,7 +52,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 30%;
     justify-content: space-around;
 }
 
@@ -157,6 +158,9 @@ main .triangle {
 .subjects {
     height: 720px;
     padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subject-title {
@@ -178,6 +182,8 @@ main .triangle {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
+    max-width: 1300px;
+    place-content: center;
 }
 
 .subjects h1 {
@@ -223,10 +229,12 @@ main .triangle {
     list-style-type: none;
     display: flex;
     gap: 20px; */
+    
 }
 
 .subject-box ul li {
     padding: 3px 0;
+    white-space: nowrap;
 }
 
 .subject-more-info {
@@ -257,6 +265,8 @@ main .triangle {
     justify-content: flex-end;
 
 }
+
+
 
 /* posts */
 
@@ -791,6 +801,164 @@ footer {
     height: 25px !important;
 }
 
+/* MODAL */
+.subject-modal {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.subject-modal-wrapper {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.subject-modal-wrapper-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.subject-modal-wrapper-header-title {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject-modal-wrapper-header-pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.subject-modal-wrapper-header-title h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.subject-modal-wrapper-header-close {
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.subject-modal-wrapper-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    overflow-y: scroll;
+}
+
+.subject-modal-wrapper-content-main::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+    
+}
+
+.subject-modal-wrapper-content-main::-webkit-scrollbar-thumb {
+    background: #c3c3c3;
+    border-radius: 15px;
+}
+
+.subject-modal-wrapper-content-sidebar {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #c3c3c3;
+    padding: 20px;
+}
+
+.subject-modal-wrapper-content-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subject-modal-wrapper-content-sidebar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #c3c3c3;
+    transition: all 0.3s ease-in-out;
+}
+
+.subject-modal-wrapper-content-sidebar ul li:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.m-sel {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+}
+
+.subject-modal-wrapper-content-main {
+    height: 100%;
+    padding: 20px 40px;
+    overflow-y: scroll;
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.subject-modal-wrapper-content-main-course-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subject-modal-wrapper-content-main-tutors {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subject-modal-wrapper-content-main-tutor {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.subject-modal-wrapper-content-main-tutor:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.subject-modal-wrapper-content-main-tutor img {
+    width: 150px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
 /* scroll */
 ::-webkit-scrollbar {
     width: 7px;
@@ -804,3 +972,6 @@ footer {
     width: 7px;
     
 }
+
+
+/* Media Queries */
