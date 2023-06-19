@@ -1,603 +1,1050 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | PTRGV^2</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="RGV.png">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="RGV.png" />
+  </head>
+  <body>
     <header>
-        <div class="header-wrapper">
-            <img src="RGV.png" alt="" onclick="window.location.href = 'index.html'">
-            <nav>
-                <a href="index.html">
-                    <div class="link">
-                        Home
-                    </div>
-                </a>
-                <a href="about.html">
-                    <div class="link">
-                        About
-                    </div>
-                </a>
-                <a href="tutors.html">
-                    <div class="link">
-                        Tutors
-                    </div>
-                </a>
-                
-                <a href="register.html">
-                    <div class="link">
-                        Sign In
-                    </div>
-                </a>
-            </nav>
+      <div class="header-wrapper">
+        <img
+          src="RGV.png"
+          alt=""
+          onclick="window.location.href = 'index.html'"
+        />
+        <nav>
+          <a href="index.html">
+            <div class="link">Home</div>
+          </a>
+          <a href="about.html">
+            <div class="link">About</div>
+          </a>
+          <a href="tutors.html">
+            <div class="link">Tutors</div>
+          </a>
+
+          <a href="register.html">
+            <div class="link">Sign In</div>
+          </a>
+        </nav>
+
+        <div class="hamburger" onclick="openMenu()">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
         </div>
+
+        <div class="hamburger-menu-open">
+          <div class="hamburger-menu">
+            <div class="hamburger-menu-close" onclick="closeMenu()">
+              <div class="hamburger-menu-close-line"></div>
+              <div class="hamburger-menu-close-line"></div>
+            </div>
+            <div class="hamburger-menu-links">
+              <a href="index.html">
+                <div class="hamburger-menu-link">Home</div>
+              </a>
+              <a href="about.html">
+                <div class="hamburger-menu-link">About</div>
+              </a>
+              <a href="tutors.html">
+                <div class="hamburger-menu-link">Tutors</div>
+              </a>
+
+              <a href="register.html">
+                <div class="hamburger-menu-link">Sign In</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <div class="text-section">
-            <div class="hero-text">
-                Need Academic Assistance? <br> <span style="color: #ffbd59;">We're Here to Help.</span>
-            </div>
-            <div class="subtext">
-                PTRGV<sup>2</sup> is an organization led by students in the Rio Grande Valley, dedicated to providing
-                supplementary tutoring to fellow students. We offer tutoring in a multitude of subjects at a
-                variety of levels, including Mathematics, English, History, Physics, Chemistry, Biology, 
-                and Computer Science. 
-            </div>
-            <div class="buttons">
-                <a href="learnmore.html">
-                    <div class="learnmore-button">Learn More</div>
-                </a>
-                <a href="register.html">
-                    <div class="register-button">Register</div>
-                </a>
-                
-            </div>
+      <div class="text-section">
+        <div class="hero-text">
+          Need Academic Assistance? <br />
+          <span style="color: #ffbd59">We're Here to Help.</span>
         </div>
-        <div class="triangle"></div>
+        <div class="subtext">
+          PTRGV<sup>2</sup> is an organization led by students in the Rio Grande
+          Valley, dedicated to providing supplementary tutoring to fellow
+          students. We offer tutoring in a multitude of subjects at a variety of
+          levels, including Mathematics, English, History, Physics, Chemistry,
+          Biology, and Computer Science.
+        </div>
+        <div class="buttons">
+          <a href="learnmore.html">
+            <div class="learnmore-button">Learn More</div>
+          </a>
+          <a href="register.html">
+            <div class="register-button">Register</div>
+          </a>
+        </div>
+      </div>
+      <div class="triangle"></div>
     </main>
     <section class="subjects">
-        <h1>Subjects Offered</h1>
-        <div class="subjects-boxes">
-            <div class="subject-box">
-                <div class="subject-title">
-                    <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                    <h2>Math</h2>
-                </div>
-                <div class="subject-content">
-                <ul>
-                    <li>Pre-Algebra</li>
-                    <li>Algebra 1</li>
-                    <li>Geometry</li>
-                    
-                </ul>
-                <button class="subject-more-info">Click for More Info</button>
-            </div>
-            </div>
-
-            <div class="subject-box">
-                <div class="subject-title">
-                    <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                    <h2>English</h2>
-                </div>
-                <div class="subject-content">
-                <ul>
-                    <li>Middle School English</li>
-                    <li>English 1</li>
-                    <li>English 2</li>
-                    
-                </ul>
-                <button class="subject-more-info">Click for More Info</button>
-                </div>
-            </div>
-
-            <div class="subject-box">
-                <div class="subject-title">
-                    <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                    <h2>Science</h2>
-                </div>
-                <div class="subject-content">
-                <ul>
-                    <li>IPC</li>
-                    <li>Biology Pre-AP</li>
-                    <li>Chemistry Pre-AP</li>
-                    
-                </ul>
-                <button class="subject-more-info">Click for More Info</button>
-            </div>
-            </div>
-
-            <div class="subject-box">
-                <div class="subject-title">
-                    <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                    <h2>History</h2>
-                </div>
-                <div class="subject-content">
-                <ul>
-                    <li>World Geography</li>
-                    <li>AP World History</li>
-                    <li>AP U.S. History</li>
-                    
-                    
-                </ul>
-                <button class="subject-more-info">Click for More Info</button>
-            </div>
-            </div>
-
-            <div class="subject-box">
-                <div class="subject-title">
-                    <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                    <h2>Computer Science</h2>
-                </div>
-                <div class="subject-content">
-                <ul>
-                    <li>AP CSP</li>
-                    <li>AP CSA</li>
-                    <li>Python</li>
-                    
-                    
-                </ul>
-                <button class="subject-more-info">Click for More Info</button>
-            </div>
-            </div>
+      <h1>Subjects Offered</h1>
+      <div class="subjects-boxes">
+        <div class="subject-box">
+          <div class="subject-title">
+            <img
+              src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+              alt=""
+              class="subject-image"
+            />
+            <h2>Math</h2>
+          </div>
+          <div class="subject-content">
+            <ul>
+              <li>Pre-Algebra</li>
+              <li>Algebra 1</li>
+              <li>Geometry</li>
+            </ul>
+            <button class="subject-more-info">Click for More Info</button>
+          </div>
         </div>
 
-        <div class="subject-modal">
-            <div class="subject-modal-wrapper">
-                <div class="subject-modal-wrapper-header">
-                    <div class="subject-modal-wrapper-header-title">
-                        <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-modal-wrapper-header-pfp">
-                        <h2>Math</h2>
-                    </div>
-                    <div class="subject-modal-wrapper-header-close">
-                        X
-                    </div>
-                </div>
-
-                <div class="subject-modal-wrapper-content">
-                    <div class="subject-modal-wrapper-content-sidebar">
-                        <ul>
-                            <li class="m-sel">Pre-Algebra</li>
-                            <li>Algebra 1</li>
-                            <li>Geometry</li>
-                            <li>Algebra 2</li>
-                            <li>Pre-Calculus</li>
-                            <li>Calculus</li>
-                            <li>AP Calculus AB</li>
-                            <li>AP Calculus BC</li>
-                        </ul>
-                    </div>
-
-                    <div class="subject-modal-wrapper-content-main" style="display: flex;">
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h3>Pre-Algebra</h3>
-                            <p>Our Pre-Algebra course is designed to help students who are struggling with the basics of Algebra. We will cover topics such as fractions, decimals, and basic equations. This course is designed for students in 6th-8th grade.</p>    
-                        </div>
-                        
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h3>Tutors for this course</h3>
-                            <div class="subject-modal-wrapper-content-main-tutors">
-                                <div class="subject-modal-wrapper-content-main-tutor">
-                                    <img src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf" alt="" class="subject-modal-wrapper-content-main-tutor-pfp">
-                                    <h4>John Doe</h4>
-                                </div>
-
-                                <div class="subject-modal-wrapper-content-main-tutor">
-                                    <img src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf" alt="" class="subject-modal-wrapper-content-main-tutor-pfp">
-                                    <h4>John Doe</h4>
-                                </div>
-
-                                <div class="subject-modal-wrapper-content-main-tutor">
-                                    <img src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf" alt="" class="subject-modal-wrapper-content-main-tutor-pfp">
-                                    <h4>John Doe</h4>
-                                </div>
-
-                                <div class="subject-modal-wrapper-content-main-tutor">
-                                    <img src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf" alt="" class="subject-modal-wrapper-content-main-tutor-pfp">
-                                    <h4>John Doe</h4>
-                                </div>
-
-                                <div class="subject-modal-wrapper-content-main-tutor">
-                                    <img src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf" alt="" class="subject-modal-wrapper-content-main-tutor-pfp">
-                                    <h4>John Doe</h4>
-                                </div>
-
-                                <div class="subject-modal-wrapper-content-main-tutor">
-                                    <img src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf" alt="" class="subject-modal-wrapper-content-main-tutor-pfp">
-                                    <h4>John Doe</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="subject-modal-wrapper-content-main">
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h3>Algebra 1</h3>
-                            <p>Our Pre-Algebra course is designed to help students who are struggling with the basics of Algebra. We will cover topics such as fractions, decimals, and basic equations. This course is designed for students in 6th-8th grade.</p>    
-                        </div>
-                        
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h4>Tutors for this course</h4>
-                            <div class="subject-modal-wrapper-content-main-tutors">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="subject-modal-wrapper-content-main">
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h3>Pre-Algebra</h3>
-                            <p>Our Pre-Algebra course is designed to help students who are struggling with the basics of Algebra. We will cover topics such as fractions, decimals, and basic equations. This course is designed for students in 6th-8th grade.</p>    
-                        </div>
-                        
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h3>Tutors for this course</h3>
-                            <div class="subject-modal-wrapper-content-main-tutors">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="subject-modal-wrapper-content-main">
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h3>Pre-Algebra</h3>
-                            <p>Our Pre-Algebra course is designed to help students who are struggling with the basics of Algebra. We will cover topics such as fractions, decimals, and basic equations. This course is designed for students in 6th-8th grade.</p>    
-                        </div>
-                        
-                        <div class="subject-modal-wrapper-content-main-course-section">
-                            <h3>Tutors for this course</h3>
-                            <div class="subject-modal-wrapper-content-main-tutors">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="subject-box">
+          <div class="subject-title">
+            <img
+              src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+              alt=""
+              class="subject-image"
+            />
+            <h2>English</h2>
+          </div>
+          <div class="subject-content">
+            <ul>
+              <li>Middle School English</li>
+              <li>English 1</li>
+              <li>English 2</li>
+            </ul>
+            <button class="subject-more-info">Click for More Info</button>
+          </div>
         </div>
+
+        <div class="subject-box">
+          <div class="subject-title">
+            <img
+              src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+              alt=""
+              class="subject-image"
+            />
+            <h2>Science</h2>
+          </div>
+          <div class="subject-content">
+            <ul>
+              <li>IPC</li>
+              <li>Biology Pre-AP</li>
+              <li>Chemistry Pre-AP</li>
+            </ul>
+            <button class="subject-more-info">Click for More Info</button>
+          </div>
+        </div>
+
+        <div class="subject-box">
+          <div class="subject-title">
+            <img
+              src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+              alt=""
+              class="subject-image"
+            />
+            <h2>History</h2>
+          </div>
+          <div class="subject-content">
+            <ul>
+              <li>World Geography</li>
+              <li>AP World History</li>
+              <li>AP U.S. History</li>
+            </ul>
+            <button class="subject-more-info">Click for More Info</button>
+          </div>
+        </div>
+
+        <div class="subject-box">
+          <div class="subject-title">
+            <img
+              src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+              alt=""
+              class="subject-image"
+            />
+            <h2>Comp. Sci</h2>
+          </div>
+          <div class="subject-content">
+            <ul>
+              <li>AP CSP</li>
+              <li>AP CSA</li>
+              <li>Python</li>
+            </ul>
+            <button class="subject-more-info">Click for More Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-modal">
+        <div class="subject-modal-wrapper">
+          <div class="subject-modal-wrapper-header">
+            <div class="subject-modal-wrapper-header-title">
+              <img
+                src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+                alt=""
+                class="subject-modal-wrapper-header-pfp"
+              />
+              <h2>Math</h2>
+            </div>
+            <div class="subject-modal-wrapper-header-close">X</div>
+          </div>
+
+          <div class="subject-modal-wrapper-content">
+            <div class="subject-modal-wrapper-content-sidebar">
+              <ul>
+                <li class="m-sel">Pre-Algebra</li>
+                <li>Algebra 1</li>
+                <li>Geometry</li>
+                <li>Algebra 2</li>
+                <li>Pre-Calculus</li>
+                <li>Calculus</li>
+                <li>AP Calculus AB</li>
+                <li>AP Calculus BC</li>
+              </ul>
+            </div>
+
+            <div
+              class="subject-modal-wrapper-content-main"
+              style="display: flex"
+            >
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h3>Pre-Algebra</h3>
+                <p>
+                  Our Pre-Algebra course is designed to help students who are
+                  struggling with the basics of Algebra. We will cover topics
+                  such as fractions, decimals, and basic equations. This course
+                  is designed for students in 6th-8th grade.
+                </p>
+              </div>
+
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h3>Tutors for this course</h3>
+                <div class="subject-modal-wrapper-content-main-tutors">
+                  <div class="subject-modal-wrapper-content-main-tutor">
+                    <img
+                      src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf"
+                      alt=""
+                      class="subject-modal-wrapper-content-main-tutor-pfp"
+                    />
+                    <h4>John Doe</h4>
+                  </div>
+
+                  <div class="subject-modal-wrapper-content-main-tutor">
+                    <img
+                      src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf"
+                      alt=""
+                      class="subject-modal-wrapper-content-main-tutor-pfp"
+                    />
+                    <h4>John Doe</h4>
+                  </div>
+
+                  <div class="subject-modal-wrapper-content-main-tutor">
+                    <img
+                      src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf"
+                      alt=""
+                      class="subject-modal-wrapper-content-main-tutor-pfp"
+                    />
+                    <h4>John Doe</h4>
+                  </div>
+
+                  <div class="subject-modal-wrapper-content-main-tutor">
+                    <img
+                      src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf"
+                      alt=""
+                      class="subject-modal-wrapper-content-main-tutor-pfp"
+                    />
+                    <h4>John Doe</h4>
+                  </div>
+
+                  <div class="subject-modal-wrapper-content-main-tutor">
+                    <img
+                      src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf"
+                      alt=""
+                      class="subject-modal-wrapper-content-main-tutor-pfp"
+                    />
+                    <h4>John Doe</h4>
+                  </div>
+
+                  <div class="subject-modal-wrapper-content-main-tutor">
+                    <img
+                      src="https://i.scdn.co/image/ab676161000051746003f54411b80a01d56a32cf"
+                      alt=""
+                      class="subject-modal-wrapper-content-main-tutor-pfp"
+                    />
+                    <h4>John Doe</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="subject-modal-wrapper-content-main">
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h3>Algebra 1</h3>
+                <p>
+                  Our Pre-Algebra course is designed to help students who are
+                  struggling with the basics of Algebra. We will cover topics
+                  such as fractions, decimals, and basic equations. This course
+                  is designed for students in 6th-8th grade.
+                </p>
+              </div>
+
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h4>Tutors for this course</h4>
+                <div class="subject-modal-wrapper-content-main-tutors"></div>
+              </div>
+            </div>
+
+            <div class="subject-modal-wrapper-content-main">
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h3>Pre-Algebra</h3>
+                <p>
+                  Our Pre-Algebra course is designed to help students who are
+                  struggling with the basics of Algebra. We will cover topics
+                  such as fractions, decimals, and basic equations. This course
+                  is designed for students in 6th-8th grade.
+                </p>
+              </div>
+
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h3>Tutors for this course</h3>
+                <div class="subject-modal-wrapper-content-main-tutors"></div>
+              </div>
+            </div>
+
+            <div class="subject-modal-wrapper-content-main">
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h3>Pre-Algebra</h3>
+                <p>
+                  Our Pre-Algebra course is designed to help students who are
+                  struggling with the basics of Algebra. We will cover topics
+                  such as fractions, decimals, and basic equations. This course
+                  is designed for students in 6th-8th grade.
+                </p>
+              </div>
+
+              <div class="subject-modal-wrapper-content-main-course-section">
+                <h3>Tutors for this course</h3>
+                <div class="subject-modal-wrapper-content-main-tutors"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
     <section class="testimonials">
-        <div class="arrows">
-            <div class="arrow ar-up">^</div>
-            <div class="arrow ar-dwn">^</div>
-        </div>
-        <div class="carousel-wrapper">
-            <div class="carousel">
-                <div class="testimonial">
-                    <div class="testimonial-author">
-                        <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                        John Doe
-                    </div>
-                    <div class="testimonial-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus error quis reprehenderit quos voluptatem porro eaque alias ipsam quod, est autem veniam dolores delectus nostrum molestias et repellendus, hic pariatur.</p>
-                        <div class="stars">
-                            <svg fill="#ffbd59" width="30" height="30" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="30" height="30" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="30" height="30" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="30" height="30" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="30" height="30" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-author">
-                        <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                        Jane Doe
-                    </div>
-                    <div class="testimonial-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus error quis reprehenderit quos voluptatem porro eaque alias ipsam quod, est autem veniam dolores delectus nostrum molestias et repellendus, hic pariatur.</p>
-                        <div class="stars">
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-author">
-                        <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                        Nikhil Khatwani the 3rd
-                    </div>
-                    <div class="testimonial-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus error quis reprehenderit quos voluptatem porro eaque alias ipsam quod, est autem veniam dolores delectus nostrum molestias et repellendus, hic pariatur.</p>
-                        <div class="stars">
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-author">
-                        <img src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="" class="subject-image">
-                        Aayush Mitra the 4th
-                    </div>
-                    <div class="testimonial-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus error quis reprehenderit quos voluptatem porro eaque alias ipsam quod, est autem veniam dolores delectus nostrum molestias et repellendus, hic pariatur.</p>
-                        <div class="stars">
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#ffbd59" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#ffbd59" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                            <svg fill="#c3c3c3" width="25" height="25" viewBox="0 0 24 24" class="star-svg"><path fill="#c3c3c3" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path></svg>
-                        </div>
-                    </div>
-                </div>
+      <div class="arrows">
+        <div class="arrow ar-up">^</div>
+        <div class="arrow ar-dwn">^</div>
+      </div>
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="testimonial">
+            <div class="testimonial-author">
+              <img
+                src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+                alt=""
+                class="subject-image"
+              />
+              John Doe
             </div>
+            <div class="testimonial-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ducimus error quis reprehenderit quos voluptatem porro eaque
+                alias ipsam quod, est autem veniam dolores delectus nostrum
+                molestias et repellendus, hic pariatur.
+              </p>
+              <div class="stars">
+                <svg
+                  fill="#ffbd59"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-author">
+              <img
+                src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+                alt=""
+                class="subject-image"
+              />
+              Jane Doe
+            </div>
+            <div class="testimonial-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ducimus error quis reprehenderit quos voluptatem porro eaque
+                alias ipsam quod, est autem veniam dolores delectus nostrum
+                molestias et repellendus, hic pariatur.
+              </p>
+              <div class="stars">
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-author">
+              <img
+                src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+                alt=""
+                class="subject-image"
+              />
+              Nikhil Khatwani the 3rd
+            </div>
+            <div class="testimonial-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ducimus error quis reprehenderit quos voluptatem porro eaque
+                alias ipsam quod, est autem veniam dolores delectus nostrum
+                molestias et repellendus, hic pariatur.
+              </p>
+              <div class="stars">
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-author">
+              <img
+                src="https://i.pinimg.com/550x/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg"
+                alt=""
+                class="subject-image"
+              />
+              Aayush Mitra the 4th
+            </div>
+            <div class="testimonial-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ducimus error quis reprehenderit quos voluptatem porro eaque
+                alias ipsam quod, est autem veniam dolores delectus nostrum
+                molestias et repellendus, hic pariatur.
+              </p>
+              <div class="stars">
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#ffbd59"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#ffbd59"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#c3c3c3"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 24 24"
+                  class="star-svg"
+                >
+                  <path
+                    fill="#c3c3c3"
+                    stroke="none"
+                    stroke-miterlimit="10"
+                    stroke-width="0"
+                    d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="markers">
-            <div class="marker active"></div>
-            <div class="marker"></div>
-            <div class="marker"></div>
-            <div class="marker"></div>
+
+        <div class="arrows-hidden">
+          <div class="arrow ar-right"><</div>
+          <div class="arrow ar-left">></div>
         </div>
+      </div>
+      <div class="markers">
+        <div class="marker active"></div>
+        <div class="marker"></div>
+        <div class="marker"></div>
+        <div class="marker"></div>
+      </div>
     </section>
 
     <!-- Tutor Stats -->
-    <section class="tutor">  
-        <div class="tutor-wrapper">
-
+    <section class="tutor">
+      <div class="tutor-wrapper">
         <div class="tutor-stats">
-            <h1>Our Tutors</h1>
-            <div class="stats-container">
-                
-                <div class="tutor-stat">
-                    <span class="tutor-number">8+</span> <br> <span class="tutor-subject">Tutors</span>
-                </div>
+          <h1>Our Tutors</h1>
+          <div class="stats-container">
             <div class="tutor-stat">
-                <span class="tutor-number">7+</span> <br> <span class="tutor-subject">Questions Asked</span>
+              <span class="tutor-number">8+</span> <br />
+              <span class="tutor-subject">Tutors</span>
             </div>
             <div class="tutor-stat">
-                <span class="tutor-number">3+</span> <br> <span class="tutor-subject">Learners</span>
+              <span class="tutor-number">7+</span> <br />
+              <span class="tutor-subject">Questions Asked</span>
             </div>
             <div class="tutor-stat">
-                <span class="tutor-number">2+</span> <br> <span class="tutor-subject">Hours Tutored</span>
+              <span class="tutor-number">3+</span> <br />
+              <span class="tutor-subject">Learners</span>
             </div>
             <div class="tutor-stat">
-                <span class="tutor-number">15+</span> <br> <span class="tutor-subject">Subjects Offered</span>
+              <span class="tutor-number">2+</span> <br />
+              <span class="tutor-subject">Hours Tutored</span>
             </div>
             <div class="tutor-stat">
-                <span class="tutor-number">4+</span> <br> <span class="tutor-subject">Reviews</span>
+              <span class="tutor-number">15+</span> <br />
+              <span class="tutor-subject">Subjects Offered</span>
             </div>
-            
-            
-        </div>
+            <div class="tutor-stat">
+              <span class="tutor-number">4+</span> <br />
+              <span class="tutor-subject">Reviews</span>
+            </div>
+          </div>
         </div>
 
         <div class="tutor-paragraph">
-            <p>
-                Peer Tutoring RGV is a group of students working to provide free high quality tutoring on a variety of subjects through video conferencing for students across the Rio Grande Valley. Our tutors have taken an extensive amount of classes including higher levels such as Dual Enrollment, Advanced Placement, and Honors throughout their high school career. They aim to share what they have learned with fellow students across all grade levels including those in elementary and middle school.
-            </p>
-            <div class="tutor-cards">
-                <div class="tutor-card ">
-                    <img src="aayush.jpg" alt="">
-                    <div class="tutor-caption">
-                        <p>Aayush Mitra <br> <span>Mathematics</span></p>
-                    </div>
-                </div>
-
-                <div class="tutor-card ">
-                    <img src="vishal.webp" alt="">
-                    <div class="tutor-caption">
-                        <p>Vishal Veeramachaneni <br> <span>English</span></p>
-                    </div>
-                </div>
-
-                <div class="tutor-card ">
-                    <img src="matthew.webp" alt="">
-                    <div class="tutor-caption">
-                        <p>Matthew Lin <br> <span>Chemistry</span></p>
-                    </div>
-                </div>
+          <p>
+            Peer Tutoring RGV is a group of students working to provide free
+            high quality tutoring on a variety of subjects through video
+            conferencing for students across the Rio Grande Valley. Our tutors
+            have taken an extensive amount of classes including higher levels
+            such as Dual Enrollment, Advanced Placement, and Honors throughout
+            their high school career. They aim to share what they have learned
+            with fellow students across all grade levels including those in
+            elementary and middle school.
+          </p>
+          <div class="tutor-cards">
+            <div class="tutor-card">
+              <img src="aayush.jpg" alt="" />
+              <div class="tutor-caption">
+                <p>
+                  Aayush Mitra <br />
+                  <span>Mathematics</span>
+                </p>
+              </div>
             </div>
 
-            <button>View All Tutors ></button>
+            <div class="tutor-card">
+              <img src="vishal.webp" alt="" />
+              <div class="tutor-caption">
+                <p>
+                  Vishal Veeramachaneni <br />
+                  <span>English</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="tutor-card">
+              <img src="matthew.webp" alt="" />
+              <div class="tutor-caption">
+                <p>
+                  Matthew Lin <br />
+                  <span>Chemistry</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button>View All Tutors ></button>
         </div>
-    </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section class="contact">
-        <div class="contact-wrapper">
-            <div class="contact-top-container">
-                <h1>Contact Us</h1>
-                <p>Have any questions? Reach out to us!</p>
-            </div>
-            <div class="separated">
-                <form action="">
-                    <div class="form-group">
-                        <label for="name">
-                            Name
-                        </label>
-                        <input type="text" name="name" id="name">
-
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="name">
-                            Email
-                        </label>
-                        <input type="email" name="email" id="email">
-
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="name">
-                            Message
-                        </label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-                        
-                    </div>
-                    
-                </form>
-
-                <div class="reach-out">
-                    <div class="socials">
-                        <div class="social">
-                            <h3>EMAIL</h3>
-                            <p>
-                                <a href="mailto:ptrgv2@gmail.com">
-                                    ptrgv2@gmail.com
-                                </a>
-                            </p>
-                        </div>
-
-                        <div class="social">
-                            <h3>DISCORD</h3>
-                            <p>
-                                <a href="https://discord.gg/UrEKJ4BYWT" target="_blank">
-                                    PTRGV^2 Discord Server
-                                </a>
-                            </p>
-                        </div>
-
-                        <div class="social">
-                            <h3>INSTAGRAM</h3>
-                            <p>
-                                <a href="https://www.instagram.com/ptrgv.squared/" target="_blank">
-                                    @ptrgv.squared
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="send-btn">
-                        Send Message
-                    </button>
-                </div>
-            </div>
+      <div class="contact-wrapper">
+        <div class="contact-top-container">
+          <h1>Contact Us</h1>
+          <p>Have any questions? Reach out to us!</p>
         </div>
+        <div class="separated">
+          <form action="">
+            <div class="form-group">
+              <label for="name"> Name </label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="name"> Email </label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="name"> Message </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+
+          <div class="reach-out">
+            <div class="socials">
+              <div class="social">
+                <h3>EMAIL</h3>
+                <p>
+                  <a href="mailto:ptrgv2@gmail.com"> ptrgv2@gmail.com </a>
+                </p>
+              </div>
+
+              <div class="social">
+                <h3>DISCORD</h3>
+                <p>
+                  <a href="https://discord.gg/UrEKJ4BYWT" target="_blank">
+                    PTRGV^2 Discord Server
+                  </a>
+                </p>
+              </div>
+
+              <div class="social">
+                <h3>INSTAGRAM</h3>
+                <p>
+                  <a
+                    href="https://www.instagram.com/ptrgv.squared/"
+                    target="_blank"
+                  >
+                    @ptrgv.squared
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <button class="send-btn">Send Message</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-wrapper">
-            <div class="footer-left">
-                <div class="footer-link-wrapper">
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="tutors.html">Tutors</a>
-                        <a href="register.html">Sign In</a>
-                    </div>
-                    <div class="footer-socials">
-                        <a href="mailto:ptrgv2@gmail.com">
-                            <img src="email.png" alt="">
-                            Email
-                        </a>
-
-                        <a href="https://discord.gg/UrEKJ4BYWT" target="_blank">
-                            <img src="discord.png" alt="">
-                            Discord
-                        </a>
-
-                        <a href="https://instagram.com/ptrgv.squared" target="_blank" class="ig">
-                            <img src="instagram.png" alt="">
-                            Instagram
-                        </a>
-
-                    </div>
-                </div>
-        
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <div class="footer-link-wrapper">
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="tutors.html">Tutors</a>
+              <a href="register.html">Sign In</a>
             </div>
-            <div class="footer-right">
-                <div class="footer-logo">
-                    <img src="RGV.png" alt="">
-                </div>
+            <div class="footer-socials">
+              <a href="mailto:ptrgv2@gmail.com">
+                <img src="email.png" alt="" />
+                Email
+              </a>
 
-                <div class="footer-copyright">
-                    &copy; Peer Tutoring Rio Grande Valley.<br/> All Rights Reserved.
-                </div>
+              <a href="https://discord.gg/UrEKJ4BYWT" target="_blank">
+                <img src="discord.png" alt="" />
+                Discord
+              </a>
+
+              <a
+                href="https://instagram.com/ptrgv.squared"
+                target="_blank"
+                class="ig"
+              >
+                <img src="instagram.png" alt="" />
+                Instagram
+              </a>
             </div>
+          </div>
         </div>
+        <div class="footer-right">
+          <div class="footer-logo">
+            <img src="RGV.png" alt="" />
+          </div>
+
+          <div class="footer-copyright">
+            &copy; Peer Tutoring Rio Grande Valley.<br />
+            All Rights Reserved.
+          </div>
+        </div>
+      </div>
     </footer>
-    
+
     <!-- JS -->
     <script>
-        const btns = document.getElementsByClassName("arrow");
-        const testimonialAmount = document.querySelectorAll(".testimonial").length - 1;
-        
-        let testimonialParent = document.querySelectorAll(".carousel");
-        let testimonials = document.querySelectorAll('.testimonial')
-        const markers = document.querySelectorAll('.marker')
+      const btns = document.getElementsByClassName("arrow");
+      const testimonialAmount =
+        document.querySelectorAll(".testimonial").length - 1;
 
-        const subjectsClickMoreBtn = document.querySelectorAll('.subject-more-info')
-        const subjectModal = document.querySelector('.subject-modal')
-        const subjectModalCloseBtn = document.querySelector('.subject-modal-wrapper-header-close')
-        
-        let current = 0;
+      let testimonialParent = document.querySelectorAll(".carousel");
+      let testimonials = document.querySelectorAll(".testimonial");
+      const markers = document.querySelectorAll(".marker");
 
-        btns[0].onclick = () => {
-            markers[-current].classList.remove('active')
-            
-            if (current + 1 === 1) {
-                current = -testimonialAmount;
-            } else {
-                current += 1
-            }
-            
-            document.querySelector('.carousel').style.transform = `translateY(${current *100}%)`
-            
-            markers[-current].classList.add('active')
+      const subjectsClickMoreBtn =
+        document.querySelectorAll(".subject-more-info");
+      const subjectModal = document.querySelector(".subject-modal");
+      const subjectModalCloseBtn = document.querySelector(
+        ".subject-modal-wrapper-header-close"
+      );
+
+      const hamburger = document.querySelector(".hamburger");
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const hamburgerMenuOpen = document.querySelector(".hamburger-menu-open");
+      const hamburgerMenuClose = document.querySelector(
+        ".hamburger-menu-close"
+      );
+
+      let current = 0;
+
+      btns[0].onclick = () => {
+        markers[-current].classList.remove("active");
+
+        if (current + 1 === 1) {
+          current = -testimonialAmount;
+        } else {
+          current += 1;
         }
 
-        btns[1].onclick = () => {
-            markers[-current].classList.remove('active')
-            if (current === -testimonialAmount) {
-                current = 0;
+        document.querySelector(".carousel").style.transform = `translateY(${
+          current * 100
+        }%)`;
 
-                // reorder testimonials
-                // let lastElem = testimonials[testimonials.length - 1];
-                // testimonialParent[0].appendChild(testimonials[-current - testimonialAmount]);
-                // current -=1
+        markers[-current].classList.add("active");
+      };
 
-            } else {
-                current -= 1
-            }
-            markers[-current].classList.add('active')
+      btns[1].onclick = () => {
+        markers[-current].classList.remove("active");
+        if (current === -testimonialAmount) {
+          current = 0;
 
-            document.querySelector('.carousel').style.transform = `translateY(${current * 100}%)`
+          // reorder testimonials
+          // let lastElem = testimonials[testimonials.length - 1];
+          // testimonialParent[0].appendChild(testimonials[-current - testimonialAmount]);
+          // current -=1
+        } else {
+          current -= 1;
         }
+        markers[-current].classList.add("active");
 
-        
-        markers.forEach((m, i) => {
-            m.onclick = () => {
-                console.log(i)
-                current = -i;
-                document.querySelector('.carousel').style.transform = `translateY(${current * 100}%)`
-                
-                markers.forEach((m, i) => {
-                    if (i != current) {
-                        m.classList.remove('active');
-                    }
-                })
+        document.querySelector(".carousel").style.transform = `translateY(${
+          current * 100
+        }%)`;
+      };
 
-                m.classList.add('active');
+      markers.forEach((m, i) => {
+        m.onclick = () => {
+          console.log(i);
+          current = -i;
+          document.querySelector(".carousel").style.transform = `translateY(${
+            current * 100
+          }%)`;
+
+          markers.forEach((m, i) => {
+            if (i != current) {
+              m.classList.remove("active");
             }
-            
-        })
+          });
 
-        subjectsClickMoreBtn.forEach((btn) => {
-            btn.onclick = () => {
-                console.log('clicked')
-                subjectModal.style.display = 'flex'
-            }
-        })
+          m.classList.add("active");
+        };
+      });
 
-        subjectModalCloseBtn.onclick = () => {
-            subjectModal.style.display = 'none'
-        }
+      subjectsClickMoreBtn.forEach((btn) => {
+        btn.onclick = () => {
+          console.log("clicked");
+          subjectModal.style.display = "flex";
+        };
+      });
+
+      subjectModalCloseBtn.onclick = () => {
+        subjectModal.style.display = "none";
+      };
+
+      hamburger.onclick = () => {
+        hamburger.style.display = "none";
+        hamburgerMenuOpen.style.display = "flex";
+      };
+
+      hamburgerMenuClose.onclick = () => {
+        hamburgerMenuOpen.style.animation = "fadeOut 0.3s ease forwards";
+        hamburgerMenu.style.animation = "slideOut 0.3s ease forwards";
+
+        hamburger.style.display = "flex";
+
+        setTimeout(() => {
+          hamburgerMenuOpen.style.display = "none";
+          hamburgerMenuOpen.style.animation = "none";
+          hamburgerMenu.style.animation = "slideIn 0.3s ease-in-out";
+        }, 300);
+      };
     </script>
-
-</body>
+  </body>
 </html>
